@@ -1,0 +1,117 @@
+<html>
+	<head>
+	
+	<!--Facebook META crap -->
+	<meta property="og:title" content="PleaseEncourage.me" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://pleaseencourage.me" />
+<meta property="og:image" content="http://hscott.net/facebookpic.jpg" />
+<meta property="og:site_name" content="PleaseEncourage.me" />
+<meta property="fb:admins" content="1105260025" />
+
+<!-- Check for Javascript enabled, and tell visitor to enable it if it's not -->
+<noscript>
+<meta HTTP-EQUIV="REFRESH" content="0; url=http://pleaseencourage.me/nojs.html"> 
+</noscript>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25084778-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+		<title>PleaseEncourage.me | Instant encouragement.</title>
+		<div id="about" style="font-family:  Century Gothic, sans-serif;"><u>What is this?</u></div>
+	<br />
+	<div id="abouttext" style="display:none; font-family:  Century Gothic, sans-serif;"></div>
+		<!-- Facebook like button -->
+		<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fpleaseencourage.me&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px; text-align: right;" allowTransparency="true"></iframe>
+		<!-- Tweet button -->
+		<br />
+		<a href="http://twitter.com/share" class="twitter-share-button" data-text="Need a little encouragement? Check out PleaseEncourage.me!" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		
+		<p style="margin-top: 200px; text-align: center; font-family:  Century Gothic, sans-serif;"> Click button, recieve encouragement. </p>
+		
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<style type="text/css">
+		#wrapper {
+			width: 240px;
+			height: 230px;
+			margin: auto;
+			padding: 10px;
+			margin-top: 0px;
+			text-align: center;
+		}
+	
+		.both {background-image: url(blueprint.gif); background-repeat: repeat;}
+
+		
+		
+		</style>
+	</head>
+	<body class = "both">
+		<div id="wrapper">
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$("#generate").click(function(){
+				$("#quote p").load("rantex.php", function(){
+					$(this).hide().fadeIn();
+					});
+			});
+			$("#about").click(function(){
+				$("#abouttext").load("about.txt", function(){
+					$(this).slideToggle();
+				});
+			});
+			$("#about").css('cursor', 'pointer');
+			$("#generate").css('cursor', 'pointer');
+			
+		});
+		</script>
+		
+	
+	<input type="submit" style="background-image: url(button.png); height:4em; width:12em;" id="generate" value=""><br />
+		<div id="quote" style="font-family:  Century Gothic, sans-serif;"><p></p></div>
+		<br />
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

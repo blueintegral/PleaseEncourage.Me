@@ -1,0 +1,2 @@
+Ever feel the need for a little encouragement? Well here 'ya go!<br /> 
+<a href="http://hscott.net">Hunter Scott</a> made this mostly as a "Hello, World!" for jQuery.
